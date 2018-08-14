@@ -53,7 +53,7 @@
             "displayName": "DB Vendor",
             "description": "DB vendor (h2, postgres, mysql or mariadb)",
             "name": "DB_VENDOR",
-            "value": "H2",
+            "value": "postgres",
             "required": true
         },
         {
@@ -64,17 +64,17 @@
             "required": true
         },
         {
-            "displayName": "DB Password",
-            "description": "DB password",
-            "name": "DB_PASSWORD",
-            "value": "my_database_password",
-            "required": true
-        },
-        {
             "displayName": "DB User",
             "description": "DB user",
             "name": "DB_USER",
             "value": "my_database_user_name",
+            "required": true
+        },
+        {
+            "displayName": "DB Password",
+            "description": "DB password",
+            "name": "DB_PASSWORD",
+            "value": "my_database_password",
             "required": true
         },
         {
