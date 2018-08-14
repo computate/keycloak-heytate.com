@@ -33,7 +33,7 @@
             "name": "KEYCLOAK_PASSWORD",
             "from": "[a-zA-Z0-9]{8}",
             "generate": "expression",
-            "required": false
+            "required": true
         },
         {
             "displayName": "DB Vendor",
@@ -54,14 +54,14 @@
             "description": "DB user",
             "name": "DB_USER",
             "value": "my_database_user_name",
-            "required": true
+            "required": false
         },
         {
             "displayName": "DB Database",
             "description": "DB database",
             "name": "DB_DATABASE",
             "value": "my_database_name",
-            "required": true
+            "required": false
         },
         {
             "displayName": "Custom http Route Hostname",
