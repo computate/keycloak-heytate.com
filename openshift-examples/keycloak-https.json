@@ -33,13 +33,34 @@
             "name": "KEYCLOAK_PASSWORD",
             "from": "[a-zA-Z0-9]{8}",
             "generate": "expression",
-            "required": true
+            "required": false
         },
         {
             "displayName": "DB Vendor",
             "description": "DB vendor (H2, POSTGRES, MYSQL or MARIADB)",
             "name": "DB_VENDOR",
             "value": "H2",
+            "required": false
+        },
+        {
+            "displayName": "DB Password",
+            "description": "DB password",
+            "name": "DB_PASSWORD",
+            "value": "my_database_password",
+            "required": false
+        },
+        {
+            "displayName": "DB User",
+            "description": "DB user",
+            "name": "DB_USER",
+            "value": "my_database_user_name",
+            "required": true
+        },
+        {
+            "displayName": "DB Database",
+            "description": "DB database",
+            "name": "DB_DATABASE",
+            "value": "my_database_name",
             "required": true
         },
         {
@@ -207,6 +228,18 @@
                                     {
                                         "name": "DB_VENDOR",
                                         "value": "${DB_VENDOR}"
+                                    },
+                                    {
+                                        "name": "DB_DATABASE",
+                                        "value": "${DB_DATABASE}"
+                                    },
+                                    {
+                                        "name": "DB_USER",
+                                        "value": "${DB_USER}"
+                                    },
+                                    {
+                                        "name": "DB_PASSWORD",
+                                        "value": "${DB_PASSWORD}"
                                     }
                                 ],
                                 "securityContext": {
