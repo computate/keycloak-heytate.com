@@ -225,7 +225,7 @@
                         "containers": [
                             {
                                 "name": "${APPLICATION_NAME}",
-                                "image": "computate/keycloak-openshift",
+                                "image": "computate/keycloak",
                                 "ports": [
                                     {
                                         "containerPort": 8080,
