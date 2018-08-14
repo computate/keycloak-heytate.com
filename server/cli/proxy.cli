@@ -1,2 +1,3 @@
 /subsystem=undertow/server=default-server/http-listener=default: write-attribute(name=proxy-address-forwarding, value=${env.PROXY_ADDRESS_FORWARDING:false})
 /subsystem=undertow/server=default-server/https-listener=https: write-attribute(name=proxy-address-forwarding, value=${env.PROXY_ADDRESS_FORWARDING:false})
+/core-service=management/security-realm=ApplicationRealm/server-identity=ssl:add(keystore-password=${env.KEYSTORE_PASSWORD:password}, key-password=${env.KEY_PASSWORD:password})
