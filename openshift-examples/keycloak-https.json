@@ -40,42 +40,49 @@
             "description": "Keystore password",
             "name": "KEYSTORE_PASSWORD",
             "value": "password",
-            "required": false
+            "required": true
         },
         {
             "displayName": "Private key Password",
             "description": "Private key password",
             "name": "KEY_PASSWORD",
             "value": "password",
-            "required": false
+            "required": true
         },
         {
             "displayName": "DB Vendor",
-            "description": "DB vendor (H2, POSTGRES, MYSQL or MARIADB)",
+            "description": "DB vendor (h2, postgres, mysql or mariadb)",
             "name": "DB_VENDOR",
             "value": "H2",
-            "required": false
+            "required": true
+        },
+        {
+            "displayName": "DB Address",
+            "description": "DB address",
+            "name": "DB_ADDR",
+            "value": "postgresql.postgres.svc",
+            "required": true
         },
         {
             "displayName": "DB Password",
             "description": "DB password",
             "name": "DB_PASSWORD",
             "value": "my_database_password",
-            "required": false
+            "required": true
         },
         {
             "displayName": "DB User",
             "description": "DB user",
             "name": "DB_USER",
             "value": "my_database_user_name",
-            "required": false
+            "required": true
         },
         {
             "displayName": "DB Database",
             "description": "DB database",
             "name": "DB_DATABASE",
             "value": "my_database_name",
-            "required": false
+            "required": true
         },
         {
             "displayName": "Custom http Route Hostname",
@@ -250,6 +257,10 @@
                                     {
                                         "name": "DB_VENDOR",
                                         "value": "${DB_VENDOR}"
+                                    },
+                                    {
+                                        "name": "DB_ADDR",
+                                        "value": "${DB_ADDR}"
                                     },
                                     {
                                         "name": "DB_DATABASE",
