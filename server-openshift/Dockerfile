@@ -1,4 +1,4 @@
-FROM jboss/keycloak:4.2.1.Final
+FROM computate/keycloak:4.2.1.Final
 
 USER root
 

@@ -1,4 +1,4 @@
-# Version 1.1
+# computate/keycloak:4.2.1.Final
 FROM jboss/base-jdk:8
 
 ENV KEYCLOAK_VERSION 4.2.1.Final
