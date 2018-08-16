@@ -51,4 +51,4 @@ EXPOSE 8080
 
 ENTRYPOINT [ "/opt/jboss/docker-entrypoint.sh" ]
 
-CMD ["/bin/bash", "/opt/jboss/keycloak/cli/update-ssl.sh", "&&", "-b", "0.0.0.0"]
+CMD ["/bin/bash", "/opt/jboss/keycloak/cli/update-ssl.sh", "&&", "start-keycloak.sh", "-b", "0.0.0.0"]
