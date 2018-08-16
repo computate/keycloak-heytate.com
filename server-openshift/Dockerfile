@@ -17,4 +17,4 @@ USER 1000
 
 ENTRYPOINT [ "openshift-entrypoint.sh" ]
 
-CMD ["/bin/bash", "/opt/jboss/keycloak/cli/update-ssl.sh", "&&", "start-keycloak.sh", "-b", "0.0.0.0"]
+CMD ["/bin/bash", "/opt/jboss/keycloak/cli/run-ssl.sh"]
