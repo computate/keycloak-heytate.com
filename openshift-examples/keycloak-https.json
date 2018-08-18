@@ -36,6 +36,13 @@
             "required": true
         },
         {
+            "displayName": "Keystore Alias",
+            "description": "Keystore alias (usually your domain name). ",
+            "name": "KEYSTORE_ALIAS",
+            "value": "example.com",
+            "required": true
+        },
+        {
             "displayName": "Keystore Password",
             "description": "Keystore password",
             "name": "KEYSTORE_PASSWORD",
@@ -245,6 +252,10 @@
                                     {
                                         "name": "KEYCLOAK_PASSWORD",
                                         "value": "${KEYCLOAK_PASSWORD}"
+                                    },
+                                    {
+                                        "name": "KEYSTORE_ALIAS",
+                                        "value": "${KEYSTORE_ALIAS}"
                                     },
                                     {
                                         "name": "KEYSTORE_PASSWORD",
